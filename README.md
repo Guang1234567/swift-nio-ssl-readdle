@@ -1,3 +1,12 @@
+# My Changed
+
+- 2020-02-11
+    
+    Fork [readdle/swift-nio-ssl](https://github.com/readdle/swift-nio-ssl) for study.
+    
+    Please use [Guang1234567/swift-nio](https://github.com/Guang1234567/swift-nio) which base on `v2.x.x` for Android OS.
+---
+
 # SwiftNIO SSL
 
 SwiftNIO SSL is a Swift package that contains an implementation of TLS based on OpenSSL-compatible libraries (that is, any library that ships a libssl that is compatible with OpenSSL's). This package allows users of [SwiftNIO](https://github.com/apple/swift-nio) to write protocol clients and servers that use TLS to secure data in flight.
