@@ -4,7 +4,7 @@
     
     Fork [readdle/swift-nio-ssl](https://github.com/readdle/swift-nio-ssl) for study.
     
-    Please use [Guang1234567/swift-nio](https://github.com/Guang1234567/swift-nio) which base on `v2.x.x` for Android OS.
+    Please use [Guang1234567/swift-nio-ssl](https://github.com/Guang1234567/swift-nio-ssl) which base on `v2.x.x` for Android OS.
 ---
 
 # SwiftNIO SSL
