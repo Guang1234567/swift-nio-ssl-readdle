@@ -14,6 +14,7 @@
 
 import CNIOOpenSSL
 
+/*
 private let callbackLock: UnsafeMutablePointer<pthread_mutex_t> =  {
     var ptr = UnsafeMutablePointer<pthread_mutex_t>.allocate(capacity: 1)
     let err = pthread_mutex_init(ptr, nil)
@@ -91,4 +92,11 @@ private func getThreadID() -> UInt {
 #else // Linux
     return UInt(pthread_self())
 #endif
+}
+*/
+
+func initializeOpenSSL() -> Bool {
+    // Initializing OpenSSL is made up of two steps. First, we need to load all the various crypto bits.
+    CNIOOpenSSL_InitializeOpenSSL()
+    return true
 }

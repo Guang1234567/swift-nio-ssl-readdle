@@ -121,7 +121,7 @@ public final class SSLContext {
     /// configuration.
     internal init(configuration: TLSConfiguration, callbackManager: CallbackManagerProtocol?) throws {
         guard openSSLIsInitialized else { fatalError("Failed to initialize OpenSSL") }
-        guard let ctx = SSL_CTX_new(SSLv23_method()) else { throw NIOOpenSSLError.unableToAllocateOpenSSLObject }
+        guard let ctx = SSL_CTX_new(CNIOOpenSSL_TLS_Method()) else { throw NIOOpenSSLError.unableToAllocateOpenSSLObject }
 
         // TODO(cory): It doesn't seem like this initialization should happen here: where?
         CNIOOpenSSL_SSL_CTX_setAutoECDH(ctx)
